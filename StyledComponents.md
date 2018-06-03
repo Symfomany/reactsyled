@@ -52,6 +52,36 @@ Marche si Title as className={this.props.className}
 
 ### Extends Styled Componant
 
+### Add attrs to props
+
+```
+const InputStyled = Input.extend.attrs({
+// we can define static props
+type: "password",
+required: "required",
+placeholder: props => props.placeholder || "Mot de passe",
+
+// or we can define dynamic ones
+margin: props => props.size || "1em",
+padding: props => props.size || "1em"
+})`font-size: 1em; /* here we use the dynamically computed props */ margin: ${props => props.margin}; padding: ${props => props.padding};`;
+```
+
+### Theming with Styled Composants
+
+```
+<ThemeProvider theme={invertTheme}>
+  <Button>Inverted Theme</Button>
+</ThemeProvider>
+```
+
+### Theming props with Styled Composants
+
+```
+  <ButtonOutline theme={{ fg: "orange" }}>Cliquez-moi ici</ButtonOutline>
+  <ButtonOutline>Cliquez-moi</ButtonOutline>
+```
+
 ### The Age of Props
 
 ```

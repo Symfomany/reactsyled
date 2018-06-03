@@ -1,6 +1,7 @@
 const theme = {
-  color: "#cc3300",
-  fontFamily: "Georgia"
+  main: "mediumseagreen",
+  fg: "palevioletred",
+  bg: "white"
 };
 
 export default theme;

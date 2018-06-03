@@ -5,6 +5,7 @@ import Card from "../facc/Card";
 import { Container, Row, Col } from "styled-bootstrap-grid";
 import Menu from "../facc/Menu";
 import styled from "styled-components";
+import { withTheme } from "styled-components";
 
 const ItemMenu = styled.li`
   color: ${props => (props.active ? "gold" : "black")};
