@@ -10,11 +10,7 @@ class Title extends Component {
     this.state = {};
   }
   render() {
-    return (
-      <div>
-        <h3>{this.context.message}</h3>
-      </div>
-    );
+    return <h3 className={this.props.className}>{this.context.message}</h3>;
   }
 }
 

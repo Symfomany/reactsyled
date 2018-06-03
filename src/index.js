@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
 import AppProvider from "./components/AppProvider";
 import App from "./components/App";
 import registerServiceWorker from "./registerServiceWorker";
 import store from "./store";
 import theme from "./theme";
+
+import { injectLayoutBaseCSS } from "styled-bootstrap-grid";
+injectLayoutBaseCSS();
 
 // Main Render
 ReactDOM.render(
